@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: accrual-service-deployment
+  labels:
+    app: accrual-service
+spec:
+  replicas: {{.Values.replicas}}
+  selector:
+    matchLabels:
+      app: accrual-service
+  template:
+    metadata:
+      labels:
+        app: accrual-service
+    spec:
+      containers:
+      - name: accrual-service
+        image: davidpurkiss/purple-test:accrual-service:{{.Values.environment}}:{{.Values.version}}
+        ports:
+        - containerPort: 12001

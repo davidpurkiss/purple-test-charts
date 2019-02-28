@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: accrual-service
+spec:
+  type: NodePort
+  ports:
+  - port: 12001
+    targetPort: 12001
+    protocol: TCP
+  selector:
+    app: accrual-service
