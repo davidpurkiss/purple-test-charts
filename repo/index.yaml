@@ -1,0 +1,10 @@
+apiVersion: v1
+entries:
+  accrual-service:
+  - created: 2019-02-28T10:10:42.3222346+02:00
+    digest: c3d92c46c9bc4db7340758f2f5a8672f58f8f5d27aa8fc21ead93db0d4ee35f1
+    name: accrual-service
+    urls:
+    - https://raw.githubusercontent.com/davidpurkiss/purple-test-charts/master/repo/accrual-service-0.0.1.tgz
+    version: 0.0.1
+generated: 2019-02-28T10:10:42.3213005+02:00
